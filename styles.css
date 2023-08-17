@@ -1,0 +1,229 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.welcome-gif-background-image {
+    background-color: #030008;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-name {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 0 0;
+    text-align: center;
+    margin-bottom: -15%;
+}
+
+.welcome-gif img {
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: -5% auto;
+    position: relative;
+}
+
+.welcome-gif {
+    margin-top: -10%;
+
+}
+
+.scroll-links {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+}
+
+.scroll-links a {
+    margin: 0 25px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.scroll-links a:hover {
+    text-decoration: underline;
+}
+.car-driving-animation {
+    position: relative;
+    width: 33.33%; /* Take up 1/3 of the container width */
+    height: 0; /* Set initial height to 0 */
+    padding-bottom: calc(1398 / 2068 * 33.33%);
+    margin: 10%;
+    background: url(images/assets/Img_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 20px 0px rgba(60, 45, 97, 1),
+              0px 8px 40px 10px rgba(51, 56, 153, 1),
+              0px 4px 40px 5px rgba(21, 21, 60, 0.8),
+              0px -4px 40px 5px rgba(21, 21, 60, 0.8);
+    border-radius: 50px;         
+}
+  
+.surface {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Take up the full width of the parent */
+    height: 30%; /* Set a non-zero height, adjust percentage as needed */
+    background: url(images/assets/Img_02.png);
+    background-size: cover; /* Change background-size to 'cover' */
+    background-repeat: repeat-x; /* Change background-repeat to 'repeat' */
+    animation: moveRight 8s linear infinite;
+    border-radius: 0 0 49px 49px ; /* Apply border-radius to only the bottom half */
+    
+} 
+
+.car {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    animation: suspension 1s linear infinite;
+}
+
+.car img {
+    width: 80%;
+}
+
+/*Car Animation*/
+
+@keyframes moveRight {
+    100% {
+        background-position: -2750px 0; /* Start and end at the desired position */
+    }
+}
+
+@keyframes suspension {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.about-page {
+    background-color: #030008;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    width: 33.33%; /* Take up 1/3 of the container width */
+    padding: 20px; /* Add some padding for better readability */
+    text-align: left; /* Align the text to the left */
+    margin: 8%; /* Move the div 1/3 of the container width to the left */
+    margin-left: 3%;
+}
+
+#hello-header {
+    color: #05259f;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    letter-spacing: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#020c35);
+    line-height: 23px;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60.1%,65%,80%,90.1%,92% 
+    {
+        color: #000b36;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+        color: #FFFFFF;
+        text-shadow: 0 0 10px #3C63F9,
+        0 0 20px #3C63F9,
+        0 0 40px #3C63F9,
+        0 0 80px #3C63F9,
+        0 0 160px #3C63F9;
+    }
+}
+
+
+#hello-subheader {
+    margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#about-paragraph {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.skills-page {
+    background: url(images/assets/skills-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-text {
+    position: relative;
+    width: 33.33%; /* Take up 1/3 of the container width */
+    height: 0; /* Set initial height to 0 */
+    padding-bottom: calc(1398 / 2068 * 33.33%);
+    margin: 10%;
+}
+
+#skill-header {
+    color: #05259f;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    letter-spacing: 10px;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 23px;
+    outline: none;
+    animation: animate 5s linear infinite;
+    padding: 1em 0;
+    margin-block-start: -2em;
+    margin-block-end: 1em;
+}
+
+#skill-paragraph {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 2em;
+    font-size: large;
+    text-align: center;
+}
