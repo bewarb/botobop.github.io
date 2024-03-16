@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #333; /* Dark grey for container background for slight contrast */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #555; /* Lighter grey for a subtle border */
+    padding-bottom: 20px;
+}
+
+header h1, header p {
+    margin: 0;
+    color: #fff; /* White text for header */
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009bdf; /* Slightly lighter blue for hover effect */
+}
+
+section h2 {
+    color: #ccc; /* Lighter grey for section headings for better readability */
+    margin-top: 20px;
+}
+
+ul, article {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style-type: circle;
+    color: #fff; /* White text for list items */
+}
+
+article h3 {
+    margin-top: 10px;
+    color: #aaa; /* Light grey for article headings for readability */
+}
